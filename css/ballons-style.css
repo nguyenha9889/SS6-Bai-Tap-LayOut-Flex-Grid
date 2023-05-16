@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 62.5% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    margin: 10px;
+    color: white;
+}
+.area {
+    height: 10em;
+    grid-area: area;
+}
+.article {
+    display: grid;
+    grid-template-areas: 'area area' 'area area' 'area area' 'area area' 'area area' 'area area';
+    width: 40%;
+    position: relative;
+}
+.article__area--span4 {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+    background-image: url(https://us.123rf.com/450wm/prakobkit/prakobkit1908/prakobkit190800044/132032892-landscape-of-morning-fog-and-mountains-with-hot-air-balloons-at-sunrise.jpg?ver=6);
+
+    background-size: cover;
+    height: 20em;
+}
+.article__area--span3 {
+    grid-row: 3 / span 3;
+    grid-column: 1;
+    position: relative;
+    background-image: url(https://us.123rf.com/450wm/mindsparx/mindsparx2303/mindsparx230364661/200803867-hot-air-balloons-flying-over-the-mountains-colorful-summer-landscape.jpg?ver=6);
+    background-size: cover;
+    height: 30em;
+}
+.article__area--row3 , .article__area--row4 {
+    grid-column: 2;
+    background-image: url(https://media.istockphoto.com/id/1303350994/photo/colorful-hot-air-balloons-flying-over-the-mountain.jpg?s=612x612&w=0&k=20&c=J1k8GU0jiE6vBUgxQFIBwvIKcde0TzYnsHOt4z2-bpE=);
+    height: 10em;
+}
+.article__area--row3 {
+    grid-row: 3;
+}
+.area--opacity3 {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: rgba(223, 222, 222, 0.103);
+}
+.article__area--row4 {
+    grid-row: 4;
+}
+.article__area--span2 {
+    grid-row: 5 / span 2;
+    grid-column: 2;
+    height: 20em;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.article__area {
+    grid-row: 6;
+    grid-column: 1;
+    height: 10em;
+    background-image: url(https://media.istockphoto.com/id/1157085639/photo/hot-air-balloons-with-landscape-mountain.jpg?s=612x612&w=0&k=20&c=cQN19pQpJXZ_9DqHpdvUM-vk-84Wz3BGMjXQ6Qh0y84=);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.article__area {
+    border: 1px solid white;
+} 
+.heading {
+    font-size: 2em;
+    margin: 0.2em 0 0 0.2em;
+}
+.article__area--span3 .heading {
+    position: absolute;
+    bottom: 2.4em;
+}
+.article__area--span3 .text {
+    position: absolute;
+    bottom: 1em
+}
+
+.text {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin: 0.5em;
+}
+.btn {
+    border: none;
+    border-radius: 3px;
+    padding: 6px;
+    margin: 1.2em;
+}

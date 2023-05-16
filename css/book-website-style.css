@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font: 62.5% Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+    background-color: gainsboro;
+}
+.header__heading {
+    font-size: 3.4em;
+    text-align: center;
+}
+.category {
+    width: 50%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    margin: auto;
+    padding: 10px;
+}
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+}
+img[alt] {
+    font-size: 1.4em;
+    position: absolute;
+    left: 25%;
+}
+.item__heading {
+    font-size: 2.4em;
+    margin-bottom: 0;
+}
+.item__price {
+    font-size: 1.5em;
+    color: grey;
+}
+.item__btn {
+    font-size: 1.4em;
+    background-color: black;
+    margin: 0;
+    padding: 8px;
+    color: white;
+    width: 50px;
+    border: none;
+    border-radius: 3px;
+}
+@media screen and (max-width: 420px) {
+    .category {
+        width: 100%;
+        grid-template-columns: auto;
+    }
+}
